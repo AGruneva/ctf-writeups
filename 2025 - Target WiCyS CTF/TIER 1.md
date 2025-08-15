@@ -279,7 +279,7 @@ Next target: `/vendor/salesforce/tuvok/bbc7f740-3d44-439a-8181-fbf9c0976f16/d83d
 We know the date (b= parameter) must be replaced with the date of birth we just found, and that the three GUIDs need to be substituted with correct identifiers from our earlier collected dataset.
 
 To avoid manual trial and error, I vibe coded a Python script to brute-force all permutations of the three unknown GUID positions:  
-[`guid_bruteforser.py`](https://github.com/AGruneva/ctf-writeups-drafts/blob/main/guid_bruteforcer.py)  
+[`guid_bruteforser.py`](https://github.com/AGruneva/ctf-writeups/blob/main/2025%20-%20Target%20WiCyS%20CTF/guid_bruteforcer.py)  
 
 The script found the correct combination:
 ```
