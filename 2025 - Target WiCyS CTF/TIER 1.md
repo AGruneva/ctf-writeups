@@ -38,7 +38,7 @@ This challenge simulates a cyberattack against a tech company, where participant
 
 **Category:** Email Forensics  
 **Points:** 100 (Easy)  
-**Solves:** 803  
+**Solves:** 804  
 **Description:**  
 > _As a member of the Personalyz.io cybersecurity team, you receive a ransom email threatening to leak stolen data unless demands are met within 48 hours. Your task is to perform initial forensic analysis and extract the sender's original IP address from the email file to assist in incident response._
 
@@ -187,7 +187,7 @@ The attacker accepted a ransom under 30 BTC. Flag 2 collected.
 
 **Category:** Log analysis/ Forensics  
 **Points:** 500 (Hard)  
-**Solves:** 34  
+**Solves:** 36  
 **Description:**  
 > _Personalyz.io has received a ransom email claiming that over 50GB of sensitive data has been exfiltrated. With the lead database admin Zeek off the grid, it’s up to you to investigate.
 >Your goal is to determine whether the leaked victim data matches any records in the company’s systems by analyzing logs and metadata.
@@ -356,7 +356,7 @@ This revealed the compromised host’s name.
 
 **Category:** Network Forensics  
 **Points:** 500 (Hard)  
-**Solves:** 293  
+**Solves:** 294  
 **Description:**  
 > _We’ve tracked the data exfiltration. Now it’s time to see exactly what was stolen. Dig through the provided PCAP to extract:_
 >- _Credit card expiration date_
@@ -441,7 +441,7 @@ This command creates a symbolic link pointing to the original executable /usr/bi
 
 **Category:** Git Forensics  
 **Points:** 100 (Easy)  
-**Solves:** 251  
+**Solves:** 252  
 **Description:**  
 > _Personalyz.io’s internal app was compromised via a malicious git commit. You have only the .git directory with commit history.
 Find the commit hash introducing the malicious change and extract the malicious IPv4 address.
@@ -487,7 +487,7 @@ The function sends the query to IP address, which is a flag.
 
 **Category:** Log Analisys  
 **Points:** 300 (Medium)  
-**Solves:** 161  
+**Solves:** 163  
 **Description:**  
 > _In this challenge, you must determine who really inserted malicious Base64-encoded backdoor code into a GitHub repository. Although all commits appear to be made by developer Erik, the goal is to investigate imported GitHub audit logs in the Insightful Horizon dashboard to see if he was framed. By analyzing the `audit-logs` index across multiple repositories he worked on in the last six months, you must identify the true culprit and submit their IP address as the flag._
 
@@ -504,7 +504,7 @@ From the previous challenge, we know that the malicious commit was attributed to
 
 **Category:** Forensics  
 **Points:** 100 (Easy)  
-**Solves:** 143  
+**Solves:** 144  
 **Description:**  
 > _Connect to the backup server and download the full archive of company files. Extract the `.tar.gz` data and search through the contents to locate the stored credentials of the malicious Git committer.  The password (starting with `wicys`) is the flag._
 
@@ -543,7 +543,7 @@ This password started with `"wicys"`, matching the challenge’s flag format.
 
 **Category:** Windows Registry Forensics  
 **Points:** 300 (Medium)  
-**Solves:** 90  
+**Solves:** 93  
 **Description:**  
 > _You are given a Windows registry hive extracted from a new employee’s workstation. The system appears clean (no malware, suspicious network activity, or credential compromise is detected), but something unusual may still be hidden in the registry. Your task is to analyze the hive using forensic tools, identify at least one suspicious registry key that could indicate persistence, policy changes, or other malicious activity, and submit the key’s full path as the flag._
 
@@ -581,7 +581,7 @@ The full path for this registry key is a flag.
 
 **Category:** Linux Forensics  
 **Points:** 500 (Hard)  
-**Solves:** 66  
+**Solves:** 72  
 **Description:**  
 > _This challenge involves forensic analysis of an SD card image taken from a TinyPilot device suspected of being used for remote control in an insider threat case. The SD card contains a Raspberry Pi boot partition and Linux file system. The goal is to mount and examine the image in a safe environment, locate an IOC (such as a domain, IP address, or email) that reveals the attacker’s possible location or links them to a known threat group, and submit it as the flag._
 
