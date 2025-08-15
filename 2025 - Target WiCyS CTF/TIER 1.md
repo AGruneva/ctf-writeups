@@ -251,7 +251,7 @@ Among the API calls, one contained two GUIDs. After testing various combinations
 We also had address-related values (postal code, state, city, street) from the logs. Another API call contained four GUIDs in its URL, representing these address components: `/l/a/f2d0ef88-4684-43d6-931a-a3d8ebd67215/?_a=73404b08-df40-4df9-8ee6-bb7a53728ea4&cc=9ea52b2f-b604-4f53-9b80-aa873e455009&g=29b759da-2559-42f2-9e1c-e971a50658ef`.  
 
 Next I used a Python script to automate testing all permutations of city and state fragments against this API endpoint:  
-[`address_tester.py`](https://github.com/AGruneva/ctf-writeups-drafts/blob/main/address_tester.py)  
+[`address_tester.py`](https://github.com/AGruneva/ctf-writeups/blob/main/2025%20-%20Target%20WiCyS%20CTF/address_tester.py)  
 
 The script identified a valid combination returning HTTP 200 OK: `https://target-flask.chals.io/l/a/59a95/?_a=19ebb9&cc=5c599a&g=387835`, and one more data fragment: `7be54a88fa`.
 
