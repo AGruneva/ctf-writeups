@@ -1,6 +1,6 @@
 # 🛡️ 2025 Target WiCyS Challenge (Tier 1) – Writeup
 
-**CTF Name:** 2025 Target WiCyS Challenge  
+**CTF Name:** 2025 Target Cyber Defense Challenge  
 **Date:** July, 1 - August, 14  
 **Total Challenges:** 12  
 **Completed:** 12/12  
