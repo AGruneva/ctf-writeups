@@ -40,7 +40,7 @@ This wasn't just a "find the flag" task; it was a full-scale reverse engineering
 Coming into this as a newcomer to deep reverse engineering, the "Tunnel Vision" challenge was an immediate brick wall. The binary was written in Golang and compiled for ARM, which adds significant complexity due to Go's static linking and unique runtime.  
 To make sense of the assembly, I leaned heavily on several key resources:  
 - The Go Problem: I spent hours learning how to handle Go's symbols and types using [Cujo’s Guide to Reversing Go (Part 1)](https://cujo.com/blog/reverse-engineering-go-binaries-with-ghidra/) and [Part 2](https://cujo.com/blog/reverse-engineering-go-binaries-with-ghidra-part-2-type-extraction-windows-pe-files-and-golang-versions/). This [presentation by FIRST](https://www.youtube.com/watch?v=oeWSWD5avZo) was also instrumental in understanding the Go runtime.
-- The Architecture: Since it was ARM-based, I went through [LaurieWired’s ARM Assembly lessons](https://www.google.com/search?q=https://www.youtube.com/watch%3Fv%3DkKtWsuuJEDs%26list%3DPLn_It163He32Ujm-l_czgEBhbJjOUgFhg) to understand how registers were being manipulated.
+- The Architecture: Since it was ARM-based, I went through [LaurieWired’s ARM Assembly lessons](https://www.youtube.com/watch?v=kKtWsuuJEDs&list=PLn_It163He32Ujm-l_czgEBhbJjOUgFhg) to understand how registers were being manipulated.
 - The Tooling: I automated the heavy lifting in Ghidra using the [Advanced Threat Research GhidraScripts](https://github.com/advanced-threat-research/GhidraScripts).
 - The Implementation: I used [W3Schools' Go Tutorial](https://www.w3schools.com/go/) to quickly bridge the gap between "reading code" and "writing a functional client."
 
